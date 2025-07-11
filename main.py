@@ -6,8 +6,9 @@ import telebot
 from datetime import datetime
 
 # --- Bot Telegram ---
-TOKEN = '8132929879:AAHIPZYtQjWG9OFLAlc4nir_fv_0S_lpSWM'
-CHAT_ID = '8120795325'
+import os
+TOKEN = os.getenv '8132929879:AAHIPZYtQjWG9OFLAlc4nir_fv_0S_lpSWM'
+CHAT_ID = os.getenv '8120795325'
 bot = telebot.TeleBot(TOKEN)
 
 # --- Config Trading ---
